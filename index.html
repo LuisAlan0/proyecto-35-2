@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    
+<!-- El SDK de Firebase JS principal siempre es obligatorio y se debe figurar primero -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+<!-- TODO: Agrega SDK para los productos de Firebase que quieras usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // La configuración de Firebase de tu aplicación web
+  var firebaseConfig = {
+    apiKey: "AIzaSyCm-F_3QpbP6kawjrr-YRHm6FeNiMpU8Bo",
+    authDomain: "globoaerostatico-d43db.firebaseapp.com",
+    databaseURL: "https://globoaerostatico-d43db-default-rtdb.firebaseio.com",
+    projectId: "globoaerostatico-d43db",
+    storageBucket: "globoaerostatico-d43db.appspot.com",
+    messagingSenderId: "651716771015",
+    appId: "1:651716771015:web:140bc8bf83183cdba912e2"
+  };
+
+  // Inicializar Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+    </body>
+</html>
